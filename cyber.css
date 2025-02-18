@@ -289,3 +289,35 @@ footer .hr{
     height: 10px;
     width: 100%;
 }
+
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: -60px; /* Initially off-screen */
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: bottom 0.4s ease-out, transform 0.3s ease-in;
+}
+
+.scrollToTopBtn.visible {
+    bottom: 20px; /* Moves to visible position */
+    transform: translateY(-10px); /* Slight upward bounce */
+}
+
+.scrollToTopBtn:focus {
+    outline: none;
+}
+
+
