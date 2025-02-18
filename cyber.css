@@ -1,0 +1,254 @@
+h1,h2,h3{
+    font-family: "PT Serif", serif;
+}
+
+*{
+    font-family: "Poppins", serif;
+}
+
+.navbar{
+    background: #010312;
+}
+.navbar .navbar-nav a {
+    color: white;
+}
+
+
+.hero-section {
+    background-image: url('./assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 5rem;
+}
+
+.hero-section > div .badge{
+    background: linear-gradient(to bottom, #3F8BCF, #101940);
+    padding: .7rem 1rem;
+}
+
+.hero-section > div .btn {
+    background: linear-gradient(to bottom, #408EFC, #1D22BE);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .hero-section {
+        padding: 2rem 2rem;
+    }
+}
+
+#about .right-con{
+    text-align: left;
+}
+
+#about .left-con{
+    text-align: left;
+    font-size: 18px;
+    color: #7B7D87;
+}
+
+#about .left-con .btn{
+    background: linear-gradient(to bottom, #408EFC, #1D22BE);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#about .right-con .box{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #408EFC, #1D22BE);
+    border-radius: 5px;
+}
+
+
+#key{
+    height: 120vh;
+}
+
+#participants {
+    background-image: url('./assets/key_participants.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    position: relative;
+}
+
+.key {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -150px;
+    width: 100%; /* Ensures alignment within the container */
+}
+
+.key .row > .col-md-5{
+    height: 500px;
+}
+
+
+.key .key-content{
+    background: #0C397C;
+    border-radius: 20px;
+}
+
+.key .key-content h6{
+    color: #E8A52A;
+}
+
+
+.key .key-content img{
+    margin-top: -12px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 991px) {
+    #key{
+        height: 200vh;
+    }
+
+    .key > .row {
+        flex-direction: column;
+    }
+
+    .key > .row .col-md-5{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    #key{
+        height: 200vh;
+    }
+
+    .key{
+        padding: 20px !important;
+    }
+
+    .key > .row .col-md-5{
+        padding: 20px !important;
+    }
+}
+
+
+#why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    background: white;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom, #2A71D0, #1B4F9B);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-circle img {
+    width: 25px !important;
+}
+
+.card-custom {
+    border: none;
+    background: #EDF2F5;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+}
+
+.card-custom img {
+    width: 100%;
+}
+
+.card-custom h6 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-custom p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.agenda .agenda-time{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.agenda .date{
+    background: linear-gradient(to bottom, #FDDA06, #978204);
+    width: fit-content;
+    padding: .5rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.agenda img{
+    width: 80px;
+}
+
+.agenda .card{
+    border: none;
+    background: linear-gradient(to right, #a1c9ff 30%, #FFFFFF 70%);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .vertical{
+    border-left: 1px solid black;
+    height: 100px;
+}
+
+
+.agenda .agenda-time-backward{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.agenda .card-backward{
+    border: none;
+    background: linear-gradient(to left, #a1c9ff 30%, #FFFFFF 70%);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-backward .vertical{
+    border-left: 1px solid black;
+    height: 100px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .timeline .container{
+        padding: 10px !important;
+    }
+}
