@@ -251,4 +251,32 @@ h1,h2,h3{
     .timeline .container{
         padding: 10px !important;
     }
+
+    footer > div{
+        flex-direction: column;
+    }
+}
+
+
+footer{
+    background: #0C397C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer .hr{
+    border-bottom: 1px solid white;
+    height: 10px;
+    width: 100%;
 }
