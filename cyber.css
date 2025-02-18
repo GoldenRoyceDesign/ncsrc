@@ -257,6 +257,10 @@ h1,h2,h3{
         padding: 10px !important;
     }
 
+    .timeline > div h1{
+        text-align: center;
+    }
+
     footer > div{
         flex-direction: column;
     }
